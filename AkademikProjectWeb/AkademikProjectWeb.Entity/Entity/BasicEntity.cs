@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace AkademikProjectWeb.Entity.Entity;
 public class BasicEntity
 {
-    // Key = Birincil anahtar olduğunu belirliyoruz.
-    // Identity=1 den başlayıp 1 er 1 er artmasını sağlıyor
+
     [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int ID { get; set; }
     public bool IsActive { get; set; }
